@@ -1,8 +1,17 @@
 aid: cirius-therapeutics
 name: Cirius Therapeutics
-description: 'Cirius Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Cirius Therapeutics, Inc. is a privately held clinical-stage pharmaceutical
+  company based in Grand Rapids, Michigan, developing oral therapies for chronic metabolic
+  diseases driven by insulin resistance, including Type 2 Diabetes, Type 1 Diabetes,
+  obesity and gestational diabetes. Its lead candidate, azemiglitazone (CIR-0602K /
+  MSDC-0602K), is a next-generation insulin sensitizer that inhibits the mitochondrial
+  pyruvate carrier (MPC) to re-balance mitochondrial metabolism, improve glycemic control,
+  preserve lean muscle mass and shift visceral fat to subcutaneous and brown adipose
+  tissue, including in combination with GLP-1 receptor agonists such as tirzepatide.
+  The company publishes a corporate marketing website only; it operates no developer
+  program, public API, or machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/cirius-therapeutics/refs/heads/main/apis.yml
+image: https://img1.wsimg.com/isteam/ip/40701c08-78b4-429c-9131-4a2e35286e89/Cirius_1420x1200_Full-baa8525.jpg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +21,13 @@ created: '2026-08-09'
 modified: '2026-08-09'
 tags:
 - Company
+- Pharmaceuticals
+- Biotechnology
+- Life Sciences
+- Healthcare
+- Clinical Trials
+- Metabolic Disease
+- Diabetes
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,46 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cirius-therapeutics-domain-security.yml
+- type: LLMsTxt
+  url: llms/cirius-therapeutics-llms.txt
 - type: Website
+  url: https://ciriustx.com/
+- type: News
+  url: https://ciriustx.com/news
+- type: Contact
+  url: https://ciriustx.com/contact
+- type: Team
+  url: https://ciriustx.com/team
+- type: Science
+  url: https://ciriustx.com/science
+- type: SecondaryMarket
   url: https://forgeglobal.com/cirius-therapeutics_stock/
+x-enrichment:
+  date: '2026-08-09'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Cirius Therapeutics is a clinical-stage pharmaceutical company whose entire
+    web presence is a five-page GoDaddy-built marketing site (Home/Team/Science/News/Contact)
+    about the MPC inhibitor azemiglitazone — there is no developer section, no API host,
+    no GitHub organization, and every contract-discovery path on ciriustx.com returned
+    a hard 404.
+  evidence:
+  - url: https://ciriustx.com/
+    status: 200
+  - url: https://ciriustx.com/llms.txt
+    status: 200
+  - url: https://ciriustx.com/openapi.json
+    status: 404
+  - url: https://ciriustx.com/.well-known/agent-card.json
+    status: 404
+  - url: https://ciriustx.com/.well-known/security.txt
+    status: 404
+  - url: https://api.github.com/orgs/cirius-therapeutics
+    status: 404
+  checked: '2026-08-09'
