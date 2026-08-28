@@ -11,6 +11,17 @@ description: 'Cirius Therapeutics, Inc. is a privately held clinical-stage pharm
   The company publishes a corporate marketing website only; it operates no developer
   program, public API, or machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/cirius-therapeutics/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://img1.wsimg.com/isteam/ip/40701c08-78b4-429c-9131-4a2e35286e89/Cirius_1420x1200_Full-baa8525.jpg
 x-type: company
 x-source: harvest:secondary-market
