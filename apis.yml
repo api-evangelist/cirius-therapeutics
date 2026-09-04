@@ -22,6 +22,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://img1.wsimg.com/isteam/ip/40701c08-78b4-429c-9131-4a2e35286e89/Cirius_1420x1200_Full-baa8525.jpg
 x-type: company
 x-source: harvest:secondary-market
